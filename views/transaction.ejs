@@ -1,0 +1,17 @@
+<html>
+
+<head></head>
+
+<body>
+        <h1>Transaction du compte</h1>
+
+        <ul>
+            <% histo.forEach(function(item) { %>
+               <li> <%= item.type %> <%= item.montant %> <%= item.date %></li>
+            <% }); %> 
+           </ul>
+
+    
+</body>
+
+</html>

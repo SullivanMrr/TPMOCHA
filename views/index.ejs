@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>CoinCoinTracker</h1>
+    <label>Argent sur le compte:  <%= argent %> €</label>
+    </br>
+    </br>
+    <form action="ajout">
+        <button type="submit">Ajouter</button>
+    </form>
+    <form action="retrait">
+        <button type="submit">Retirer</button>
+    </form>
+
+    <form action="transaction">
+        <button type="submit">Transaction</button>
+    </form>
+
+    <ul>
+        <% histo.forEach(function(item) { %>
+           <li> <%= item.type %> <%= item.montant %> <%= item.date %></li>
+        <% }); %> 
+       </ul>
+
+</body>
+
+</html>
